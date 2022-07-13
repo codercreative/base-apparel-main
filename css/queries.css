@@ -1,0 +1,14 @@
+@media (max-width: 1440px) {
+  body {
+    overflow: hidden;
+  }
+  .hero-img img {
+    margin-left: auto;
+    display: block;
+  }
+
+  .hero-text {
+    margin-right: auto;
+    display: block;
+  }
+}
