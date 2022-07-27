@@ -19,45 +19,68 @@
       rel="stylesheet"
     />
 
-    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <title>Frontend Mentor | Base Apparel Coming Soon Page</title>
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main class="hero-container">
-      <div class="hero-logo">
-        <img src="./images/logo.svg" alt="base apparel logo" />
-      </div>
+    <main>
+      <div class="hero-container">
+        <!-- LOGO -->
+        <img
+          class="hero__logo"
+          src="./images/logo.svg"
+          alt="base apparel logo"
+        />
 
-      <img class="hero-image" src="./images/hero-mobile.jpg" alt="Hero image" />
+        <!-- HERO IMAGE -->
+        <img
+          class="hero__img"
+          src="./images/hero-mobile.jpg"
+          alt="Woman with peach-color shirt"
+        />
 
-      <div class="hero-text">
-        <h1 class="hero-title">
-          <span class="we-are">We're</span>
+        <!-- MAIN TITLE -->
+        <h1 class="main-heading">
+          <span class="upper-heading">We're</span>
           <br />
-          <span class="coming">coming</span>
+          <span class="mid-heading">coming </span>
           <br />
-          <span class="soon">soon</span>
+          <span class="low-heading">soon</span>
         </h1>
 
-        <p>
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
+        <!-- MAIN TEXT -->
+        <div class="main__text">
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+        </div>
+
+        <!-- EMAIL FORM -->
         <form action="#" class="form">
-          <input type="text" class="form-email" placeholder="Email Address" />
-          <input
-            type="image"
-            class="form-arrow"
-            src="./images/icon-arrow.svg"
-            alt="arrow"
-          />
-          <p class="error-msg"></p>
+          <input class="email-input" type="email" placeholder="Email Address" />
+          <button class="submit-btn" type="submit">
+            <img src="./images/icon-arrow.svg" alt="arrow" />
+          </button>
+
+          <!-- ERROR MESSAGE -->
+          <p class="error-msg hidden"></p>
         </form>
       </div>
+
+      <!-- DESKTOP IMAGE -->
+      <div class="img-desktop-container">
+        <img
+          src=".images/hero-desktop.jpg"
+          alt="Woman in a peach-colored shirt"
+        />
+      </div>
     </main>
-    <footer>
+
+    <!-- FOOTER WITH ATTRIBUTION -->
+    <footer class="footer">
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

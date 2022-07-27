@@ -10,9 +10,11 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+  - [Surprises](#surprises)
+  - [Code snippets](#code-snippets)
+  - [CSS tips](#css-tips)
+  - [Great resources](#great-resources)
+  - [Interesting articles](#interesting-articles)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -49,41 +51,53 @@ This is my first Read.me file 🎉 It is a great tool for remembering my process
 - CSS custom properties
 - Mobile-first workflow
 
-### What I learned
+### Surprises
 
-A short recap of my major learnings.
+- Hero title - it was a bit more challenging than I thought it would be - what with spans and breaks combined with making the site responsive.
 
-For responsive sites and CSS tips, Kevin Powell is the go-to expert. Here's a snippet of some of his tips that I considered while working through this project:
+- Spent time on what to call the CSS classes. Still not entirely happy with the result...next time...
 
-- **Avoid height and width whenever possible.** Naturally, websites are responsive. Consider using the padding property instead.
+### Code snippets
 
-Here are my favorite code samples for this project:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-Love 💕 how this simple code snippet centers things:
+Here is my favorite code sample for this project:
 
 ```css
-.body {
-  margin: 0 auto;
+.submit-btn {
+  position: absolute;
+  transform: translateX(-3em);
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+Learned how to change the color of the placeholder text:
+
+```css
+::placeholder {
+  color: var(--desaturated-red);
+  opacity: 0.5;
+}
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+In order to remove the glowing blue border around the email, I wrote below. There must be a better way - but this will do -- for now:
 
-### Continued development
+```css
+input:focus,
+textarea {
+  outline: none !important;
+}
+```
 
-- Need more indepth study of how to place images on a responsive website
+### CSS tips
 
-### Useful resources
+For responsive sites and CSS tips, Kevin Powell is the go-to expert. Here's a snippet of some of his tips that I considered while working through this project:
+
+- **Avoid height whenever possible. Websites are naturally responsive.** Consider using the padding property instead. Also, checkout Kevin's em vs rem lesson: [em vs rem](https://youtu.be/_-aDOAMmDHI)
+
+- Youtube episode about
+  [rems (-> in relation to root/html) instead of ems for fontsizes, as ems cause compounding problems. Use ems for margin and padding](https://www.youtube.com/watch?v=pautqDqa54I)
+
+Josh W Comeau also has a good solution for how to work with about [rems](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/#the-625-trick). I considered using his suggestion for this coding challenge -- but will keep it in mind for future projects instead.
+
+### Interesting Articles
 
 - [MDN article on the picture element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - This helped me when I needed to use a mobile version img vs a differently cropped image for desktop.
 - [MDN article on overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow) - Good reminder about the overflow property.

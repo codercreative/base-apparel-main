@@ -1,108 +1,122 @@
-* {
+/* ------GENERAL------- */
+
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 :root {
+  /* COLORS */
   --desaturated-red: #ce9797;
   --soft-red: #f96262;
   --dark-grayish-red: #413a3a;
 
-  --bg: #fff5f5;
-  --bg-email-color: #fef5f5;
-
-  /* Linear, 135deg, from  */
+  /* GRADIENTS*/
   --gradient1: #faf2f2;
   --gradient2: #f8bfbf;
   --gradient3: #ee8c8c;
+
+  /* BACKGROUND */
+  --bg: #fff5f5;
+  --bg-email-color: #fef5f5;
 }
 
 body {
-  /* display: flex;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   align-items: center;
-  justify-content: center; */
-  /* flex-direction: column; */
-  margin: 0 auto;
+  text-align: center;
+
   background-color: var(--gradient1);
 }
+
+/* ------HERO------- */
 
 .hero-container {
   display: flex;
   flex-direction: column;
 }
 
-.hero-logo {
-  padding: 60px 40px 40px 40px;
+.hero__logo {
+  display: block;
+  margin: 3em 0 3em 1.5em;
+  width: 30%;
 }
 
-.hero-img {
+.hero__img {
   display: block;
   object-fit: cover;
 }
 
-.hero-text {
-  width: 24em;
-  margin: 0 auto;
-}
+/* MAIN TITLE */
 
-h1 {
-  font-size: 40px;
-  text-align: center;
+.main-heading {
+  font-size: 2.5rem;
   text-transform: uppercase;
-  padding: 50px 0 20px 0;
-  letter-spacing: 12px;
-  font-weight: 400;
+  letter-spacing: 0.7rem;
+  font-weight: 700;
+  padding: 1.5em 0 0.5em 0;
 }
 
-.we-are {
+.upper-heading {
   color: var(--desaturated-red);
   font-weight: 300;
+  margin-bottom: 0.3rem;
 }
 
-.coming,
-.soon {
-  font-weight: 700;
-}
+/* MAIN TEXT */
 
-p {
-  color: var(--desaturated-red);
-  margin: 0 18px;
+.main__text,
+.footer {
+  width: 78%;
+  margin: 0 auto;
+
   line-height: 1.5em;
+  color: var(--desaturated-red);
   text-align: center;
 }
 
+/* -----FORM----- */
+
 .form {
-  margin: 20px 0;
-  padding: 10px 30px;
+  text-align: center;
+  margin: 1.2em 0 1.8em 0;
+  padding: 1em 1.8em;
   position: relative;
+  color: var(--desaturated-red);
 }
 
-.form-email {
+.email-input {
   border: 1px solid var(--desaturated-red);
   background: var(--bg-email-color);
   border-radius: 40px;
   font-weight: 300;
-  /* height: 3.5em; */
-  width: 22.5em;
+  width: 22em;
   padding: 1.2em;
 }
 
-.form-email::placeholder {
+::placeholder {
   color: var(--desaturated-red);
+  opacity: 0.8;
 }
 
-.form-error {
-  color: var(--softRed);
-  font-size: 13px;
-  padding: 8px 0px 0px 20px;
+input:focus,
+textarea {
+  outline: none !important;
 }
 
-.form-arrow {
+.submit-btn {
   position: absolute;
-  right: 30px;
-  width: 62px;
+  transform: translateX(-3.3em);
+  width: 4.45em;
   background: linear-gradient(
     135deg,
     var(--gradient1),
@@ -110,13 +124,37 @@ p {
     var(--gradient3)
   );
   border-radius: 30px;
-  padding: 15px 25px;
+  padding: 0.8rem 1.4rem;
+  border: none;
+  box-shadow: 0px 5px 10px 0px var(--gradient2);
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+/* ERROR MESSAGE  */
+
+.error-msg {
+  color: var(--softRed);
+}
+
+/* DESKTOP IMAGE */
+.img-desktop-container {
+  display: none;
+}
+
+/* -----FOOTER----- */
+
+.footer {
+  padding-bottom: 1em;
 }
 
 .attribution {
-  font-size: 11px;
-  text-align: center;
+  font-size: 0.7rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* -----MEDIA QUERY----- */
