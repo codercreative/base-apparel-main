@@ -1,0 +1,57 @@
+/* -----MEDIA QUERY----- */
+@media (min-width: 768px) {
+  /* HERO CONTAINER */
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 2.5em;
+  }
+
+  .grid-row-span-2 {
+    grid-row: span 2;
+  }
+
+  /* IMAGE CONTAINER */
+
+  .image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+  }
+
+  .logo {
+    padding-top: 3em;
+    margin: 0 0 3rem 0;
+    width: 10rem;
+  }
+
+  .main__heading {
+    padding: 2em 0 0 0;
+    text-align: left;
+  }
+
+  .accent {
+    display: inline-block;
+    margin-bottom: 0.2rem;
+  }
+
+  .main__text p {
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 1.8em 0.8em 0.5em 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  .form {
+    padding: 1em 1.8em 1em 0;
+    text-align: left;
+  }
+
+  .footer {
+    padding-top: 1em;
+  }
+}

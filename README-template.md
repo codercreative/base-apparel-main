@@ -10,11 +10,10 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Surprises](#surprises)
+  - [Thoughts along the way](#thoughts-along-the-way)
   - [Code snippets](#code-snippets)
   - [CSS tips](#css-tips)
   - [Great resources](#great-resources)
-  - [Interesting articles](#interesting-articles)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -41,9 +40,9 @@ Add a screenshot of your solution. The easiest way to do this is to use Firefox 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## My process
+## My Process
 
-This is my first Read.me file 🎉 It is a great tool for remembering my process and resources.
+- This is my first Read.me file 🎉 It is a great tool for remembering my process and resources.
 
 ### Built with
 
@@ -51,15 +50,27 @@ This is my first Read.me file 🎉 It is a great tool for remembering my process
 - CSS custom properties
 - Mobile-first workflow
 
-### Surprises
+### Code issues along the way
 
-- Hero title - it was a bit more challenging than I thought it would be - what with spans and breaks combined with making the site responsive.
+- Tried to use flexbox -- but grid turned out to be the way forward.
 
-- Spent time on what to call the CSS classes. Still not entirely happy with the result...next time...
+- Main heading and main text - this was a bit more challenging than I thought it would be - what with spans and breaks combined with making the site responsive.
+
+- Naming CSS classes can be challenging
+
+- I cannot figure out how to right-align the image at 1440px and greater...?
 
 ### Code snippets
 
 Here is my favorite code sample for this project:
+
+Made the image span 2 rows:
+
+```css
+.grid-row-span-2 {
+  grid-row: span 2;
+}
+```
 
 ```css
 .submit-btn {
@@ -71,18 +82,17 @@ Here is my favorite code sample for this project:
 Learned how to change the color of the placeholder text:
 
 ```css
-::placeholder {
+input::placeholder {
   color: var(--desaturated-red);
   opacity: 0.5;
 }
 ```
 
-In order to remove the glowing blue border around the email, I wrote below. There must be a better way - but this will do -- for now:
+Removed the glowing blue border around the email
 
 ```css
-input:focus,
-textarea {
-  outline: none !important;
+input:focus {
+  outline: none;
 }
 ```
 
@@ -100,6 +110,7 @@ Josh W Comeau also has a good solution for how to work with about [rems](https:/
 ### Interesting Articles
 
 - [MDN article on the picture element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - This helped me when I needed to use a mobile version img vs a differently cropped image for desktop.
+
 - [MDN article on overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow) - Good reminder about the overflow property.
 
 - [Validating email address in JS](https://ui.dev/validate-email-address-javascript)

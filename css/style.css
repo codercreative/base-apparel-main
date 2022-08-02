@@ -27,46 +27,41 @@
 body {
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  text-align: center;
-
   background-color: var(--gradient1);
 }
 
 /* ------HERO------- */
 
-.hero-container {
-  display: flex;
-  flex-direction: column;
+.container {
+  display: grid;
 }
 
-.hero__logo {
+.logo {
   display: block;
-  margin: 3em 0 3em 1.5em;
-  width: 30%;
+  margin: 3em 0 3em 1.9em;
+  width: 35%;
 }
 
-.hero__img {
-  display: block;
-  object-fit: cover;
+/* IMAGE */
+.image {
+  margin: 0 auto;
 }
 
 /* MAIN TITLE */
 
-.main-heading {
-  font-size: 2.5rem;
+.main {
+  text-align: center;
+}
+
+.main__heading {
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
   font-weight: 700;
   padding: 1.5em 0 0.5em 0;
 }
 
-.upper-heading {
+.accent {
   color: var(--desaturated-red);
   font-weight: 300;
   margin-bottom: 0.3rem;
@@ -74,23 +69,16 @@ body {
 
 /* MAIN TEXT */
 
-.main__text,
-.footer {
-  width: 78%;
-  margin: 0 auto;
-
+.main__text {
   line-height: 1.5em;
   color: var(--desaturated-red);
-  text-align: center;
 }
 
 /* -----FORM----- */
 
 .form {
-  text-align: center;
   margin: 1.2em 0 1.8em 0;
   padding: 1em 1.8em;
-  position: relative;
   color: var(--desaturated-red);
 }
 
@@ -103,14 +91,13 @@ body {
   padding: 1.2em;
 }
 
-::placeholder {
+input::placeholder {
   color: var(--desaturated-red);
   opacity: 0.8;
 }
 
-input:focus,
-textarea {
-  outline: none !important;
+input:focus {
+  outline: none;
 }
 
 .submit-btn {
@@ -147,7 +134,12 @@ textarea {
 /* -----FOOTER----- */
 
 .footer {
+  margin: 0 auto;
+  line-height: 1.5em;
+  color: var(--desaturated-red);
+  text-align: center;
   padding-bottom: 1em;
+  grid-row: span 2;
 }
 
 .attribution {
@@ -156,5 +148,3 @@ textarea {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
-/* -----MEDIA QUERY----- */

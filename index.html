@@ -22,34 +22,33 @@
     <title>Frontend Mentor | Base Apparel Coming Soon Page</title>
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
   </head>
   <body>
-    <main>
-      <div class="hero-container">
-        <!-- LOGO -->
+    <div class="container">
+      <!-- LOGO-->
+      <header class="header">
+        <img class="logo" src="./images/logo.svg" alt="base apparel logo" />
+      </header>
+      <!-- IMAGE -->
+      <picture class="image grid-row-span-2">
+        <source media="(max-width: 767px)" srcset="./images/hero-mobile.jpg" />
+        <source media="(min-width: 768px)" srcset="./images/hero-desktop.jpg" />
         <img
-          class="hero__logo"
-          src="./images/logo.svg"
-          alt="base apparel logo"
-        />
-
-        <!-- HERO IMAGE -->
-        <img
-          class="hero__img"
-          src="./images/hero-mobile.jpg"
+          src="./images/hero-desktop.jpg"
           alt="Woman with peach-color shirt"
         />
+      </picture>
 
-        <!-- MAIN TITLE -->
-        <h1 class="main-heading">
-          <span class="upper-heading">We're</span>
-          <br />
-          <span class="mid-heading">coming </span>
-          <br />
-          <span class="low-heading">soon</span>
-        </h1>
-
-        <!-- MAIN TEXT -->
+      <!-- MAIN -->
+      <main class="main">
+        <div class="main__heading">
+          <h1>
+            <span class="accent">We're</span><br />
+            coming soon
+          </h1>
+        </div>
+        <!-- TEXT -->
         <div class="main__text">
           <p>
             Hello fellow shoppers! We're currently building our new fashion
@@ -59,6 +58,7 @@
         </div>
 
         <!-- EMAIL FORM -->
+
         <form action="#" class="form">
           <input class="email-input" type="email" placeholder="Email Address" />
           <button class="submit-btn" type="submit">
@@ -68,18 +68,8 @@
           <!-- ERROR MESSAGE -->
           <p class="error-msg hidden"></p>
         </form>
-      </div>
-
-      <!-- DESKTOP IMAGE -->
-      <div class="img-desktop-container">
-        <img
-          src=".images/hero-desktop.jpg"
-          alt="Woman in a peach-colored shirt"
-        />
-      </div>
-    </main>
-
-    <!-- FOOTER WITH ATTRIBUTION -->
+      </main>
+    </div>
     <footer class="footer">
       <p class="attribution">
         Challenge by
