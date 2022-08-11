@@ -28,13 +28,14 @@ body {
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
   background-color: var(--gradient1);
+  text-align: center;
 }
-
-/* ------HERO------- */
 
 .container {
   display: grid;
 }
+
+/* LOGO */
 
 .logo {
   display: block;
@@ -45,20 +46,17 @@ body {
 /* IMAGE */
 .image {
   margin: 0 auto;
+  width: 100%;
 }
 
 /* MAIN TITLE */
-
-.main {
-  text-align: center;
-}
 
 .main__heading {
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
   font-weight: 700;
-  padding: 1.5em 0 0.5em 0;
+  padding: 1.5em 0 0.7em 0;
 }
 
 .accent {
@@ -72,6 +70,7 @@ body {
 .main__text {
   line-height: 1.5em;
   color: var(--desaturated-red);
+  padding: 0 1.3em;
 }
 
 /* -----FORM----- */
@@ -85,7 +84,7 @@ body {
 .email-input {
   border: 1px solid var(--desaturated-red);
   background: var(--bg-email-color);
-  border-radius: 40px;
+  border-radius: 100px;
   font-weight: 300;
   width: 22em;
   padding: 1.2em;
@@ -110,7 +109,7 @@ input:focus {
     var(--gradient2),
     var(--gradient3)
   );
-  border-radius: 30px;
+  border-radius: 100px;
   padding: 0.8rem 1.4rem;
   border: none;
   box-shadow: 0px 5px 10px 0px var(--gradient2);
@@ -124,20 +123,24 @@ input:focus {
 
 .error-msg {
   color: var(--softRed);
+  margin: 1em 0 0 0.8em;
 }
 
-/* DESKTOP IMAGE */
-.img-desktop-container {
-  display: none;
+.thank-you-page {
+  text-align: center;
+  margin-top: 25%;
+}
+
+.thank-you {
+  color: var(--desaturated-red);
+  font-size: 4rem;
 }
 
 /* -----FOOTER----- */
 
 .footer {
-  margin: 0 auto;
   line-height: 1.5em;
   color: var(--desaturated-red);
-  text-align: center;
   padding-bottom: 1em;
   grid-row: span 2;
 }

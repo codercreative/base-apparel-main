@@ -13,9 +13,8 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
   - [Thoughts along the way](#thoughts-along-the-way)
   - [Code snippets](#code-snippets)
   - [CSS tips](#css-tips)
-  - [Great resources](#great-resources)
+  - [Interesting articles](#interesting-articles)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -31,9 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Design preview for the Base Apparel coming soon page coding challenge](./images/base-apparel.png)
 
 ### Links
 
@@ -52,25 +49,27 @@ Add a screenshot of your solution. The easiest way to do this is to use Firefox 
 
 ### Code issues along the way
 
-- Tried to use flexbox -- but grid turned out to be the way forward.
+- Tried to use Flexbox -- but Grid turned out to be the best solution in order to get the logo and image to behave the way I needed to when making the page responsive.
+
+- I cannot figure out how to right-align the image at 1440px and greater...
 
 - Main heading and main text - this was a bit more challenging than I thought it would be - what with spans and breaks combined with making the site responsive.
 
-- Naming CSS classes can be challenging
-
-- I cannot figure out how to right-align the image at 1440px and greater...?
+- Deciding on the best way to name CSS classes...🤔
 
 ### Code snippets
 
-Here is my favorite code sample for this project:
+Here are my favorite code samples for this project:
 
-Made the image span 2 rows:
+Make the image span two rows:
 
 ```css
 .grid-row-span-2 {
   grid-row: span 2;
 }
 ```
+
+Position the submit button just right:
 
 ```css
 .submit-btn {
@@ -105,7 +104,7 @@ For responsive sites and CSS tips, Kevin Powell is the go-to expert. Here's a sn
 - Youtube episode about
   [rems (-> in relation to root/html) instead of ems for fontsizes, as ems cause compounding problems. Use ems for margin and padding](https://www.youtube.com/watch?v=pautqDqa54I)
 
-Josh W Comeau also has a good solution for how to work with about [rems](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/#the-625-trick). I considered using his suggestion for this coding challenge -- but will keep it in mind for future projects instead.
+Josh W Comeau also has a good solution for how to work with [rems](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/#the-625-trick). I considered using his suggestion for this coding challenge -- but will keep it in mind for future projects instead.
 
 ### Interesting Articles
 
@@ -119,9 +118,3 @@ Josh W Comeau also has a good solution for how to work with about [rems](https:/
 ## Author
 
 - Frontend Mentor - [@codercreative](https://www.frontendmentor.io/profile/codercreative)
-
-## Acknowledgments
-
-I appreciate the CSS tips that Kevin Powell generously shares via his YouTube channel/courses.
-
-[CSS Guru: Kevin Powell](https://www.youtube.com/kevinpowell)
