@@ -10,7 +10,7 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Thoughts along the way](#thoughts-along-the-way)
+  - [Code issues along the way](#code-issues-along-the-way)
   - [Code snippets](#code-snippets)
   - [CSS tips](#css-tips)
   - [Interesting articles](#interesting-articles)
@@ -34,10 +34,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/codercreative/base-apparel-main)
 
-## My Process
+## My process
 
 - This is my first Read.me file 🎉 It is a great tool for remembering my process and resources.
 
